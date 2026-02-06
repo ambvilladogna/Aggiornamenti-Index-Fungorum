@@ -19,7 +19,7 @@ title: Aggiornamenti Nomenclaturali
       <div class="grid grid--2col">
         {% assign sorted_reports = year_group.items | sort: "date" | reverse %}
         {% for report in sorted_reports %}
-          <div class="card" onclick="window.location.href='{{ report.url }}'">
+          <div class="card" onclick="window.location.href='.{{ report.url }}'">
             <h3 class="card__title">{{ report.month }} {{ report.year }}</h3>
             <div class="card__meta">
               <p>Totale aggiornamenti: {{ report.total_updates }}</p>
