@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Biblioteca
+title: Aggiornamenti Nomenclaturali
 ---
 
 <section class="section section--alt" id="resources" style="min-height: 600px;">
@@ -10,13 +10,27 @@ title: Biblioteca
         d'Ogna</a>
     </p>
     <p>&nbsp</p>
-    <div class="grid grid--2col">
-      <div class="card" onclick="window.location.href='reports/2025-11-aggiornamenti-Index-Fungorum.html'">
-        <h3 class="card__title">2025</h3>
-        <p class="card__description">
-          Novembre
-        </p>
+    
+    <!-- Group reports by year -->
+    {% assign reports_by_year = site.reports | group_by: "year" | sort: "name" | reverse %}
+    
+    {% for year_group in reports_by_year %}
+      <h2>{{ year_group.name }}</h2>
+      <div class="grid grid--2col">
+        {% assign sorted_reports = year_group.items | sort: "date" | reverse %}
+        {% for report in sorted_reports %}
+          <div class="card" onclick="window.location.href='{{ report.url }}'">
+            <h3 class="card__title">{{ report.month }} {{ report.year }}</h3>
+            <div class="card__meta">
+              <p>Totale aggiornamenti: {{ report.total_updates }}</p>
+              <p>Aggiornamenti di genere e/o specie: {{ report.genus_species_updates }}</p>
+              <p>Aggiornamenti delle attribuzioni: {{ report.attribution_updates }}</p>
+              <p>Aggiornamenti della classificazione: {{ report.classification_updates }}</p>
+            </div>
+          </div>
+        {% endfor %}
       </div>
-    </div>
+    {% endfor %}
+    
   </div>
 </section>

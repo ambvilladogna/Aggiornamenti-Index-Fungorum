@@ -8,6 +8,20 @@ markdown: kramdown
 # IMPORTANT: Tell Jekyll not to use a theme
 theme: null
 
+# Collections for reports
+collections:
+  reports:
+    output: true
+    permalink: /reports/:name.html
+
+# Default values for reports
+defaults:
+  - scope:
+      path: ""
+      type: "reports"
+    values:
+      layout: "report"
+
 exclude:
   - Gemfile
   - Gemfile.lock
