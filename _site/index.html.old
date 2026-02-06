@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Aggiornamenti Index Fungorum - 11/2025</title>
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="shared/css/variables.css">
+  <link rel="stylesheet" href="shared/css/reset.css">
+  <link rel="stylesheet" href="shared/css/layout.css">
+  <link rel="stylesheet" href="shared/css/components.css">
+
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">Aggiornamenti Nomenclaturali</div>
+    </div>
+  </header>
+  <section class="section section--alt" id="resources" style="min-height: 600px;">
+    <div class="container">
+      <p>Aggiornamenti trimestrali tratti da Index Fungorum riferiti alle specie contenute nel <a
+          href="https://ambvilladogna.github.io/fungi-census/" target="_blank">Censimento delle specie di AMB Villa
+          d'Ogna</a>
+      </p>
+      <p>&nbsp</p>
+      <div class="grid grid--2col">
+        <div class="card" onclick="window.location.href='reports/2025-11-aggiornamenti-Index-Fungorum.html'">
+          <h3 class="card__title">2025</h3>
+          <p class="card__description">
+            Novembre
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__section">
+          <h3>Sito principale</h3>
+          <ul>
+            <li><a href="https://www.ambvilladogna.it/index.html">Home page</a></li>
+            <li><a href="https://www.ambvilladogna.it/html/chi_siamo.html">Chi siamo</a></li>
+            <li><a href="https://www.ambvilladogna.it/html/contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Risorse</h3>
+          <ul>
+            <li><a href="/index.html">Risorse</a></li>
+            <li><a href="./biblioteca/_site/index.html">Biblioteca</a></li>
+            <li><a href="./fungi-census/index.html">Fungi Census</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/gruppomicologicovilladogna">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p>2026 - Associazione Micologica Bresadola - Gruppo di Villa d'Ogna</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
