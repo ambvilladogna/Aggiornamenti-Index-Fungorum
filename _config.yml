@@ -11,5 +11,10 @@ theme: null
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .github
+  - .git
+  - .vscode
   - node_modules
   - vendor
