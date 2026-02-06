@@ -1,0 +1,15 @@
+title: Aggiornamenti Nomenclaturali
+description: Aggiornamenti trimestrali tratti da Index Fungorum riferiti alle specie contenute nel Censimento delle specie di AMB Villa
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+# IMPORTANT: Tell Jekyll not to use a theme
+theme: null
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
