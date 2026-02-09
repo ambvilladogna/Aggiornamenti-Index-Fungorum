@@ -12,11 +12,9 @@ body {
     background-color: var(--color-bg);
 }
 
-/* 
 main {
     padding-top: var(--header-height); 
 }
-*/
 
 a {
     color: var(--color-primary);
