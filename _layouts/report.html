@@ -18,13 +18,18 @@
 <body>
     {% include header.html %}
 
+    <main>
+        <a id="top"></a>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+    
+    <!-- Floating nav -->
     <a href="#top" class="back-to-top">↑ Torna all'inizio</a>
 
-    <div id="top" class="container">
-        {{ content }}
-    </div>
-
     {% include footer.html %}
+    <script src="../shared/js/common.js"></script>
 </body>
 
 </html>
