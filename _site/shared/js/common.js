@@ -26,3 +26,12 @@ window.addEventListener('scroll', () => {
 
 // Update on window resize
 window.addEventListener('resize', updateHeaderHeight);
+
+// Handle back-to-top button with proper offset
+document.querySelector('.back-to-top')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

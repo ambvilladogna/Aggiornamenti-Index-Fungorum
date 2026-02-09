@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
 body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
     color: var(--color-text);
     background-color: var(--color-bg);
-}
-
-main {
-    padding-top: var(--header-height); 
 }
 
 a {
