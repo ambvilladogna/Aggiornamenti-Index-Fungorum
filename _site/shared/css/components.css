@@ -15,6 +15,7 @@
 
 .header__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,6 +53,15 @@
     color: var(--color-primary);
 }
 
+@media (max-width: 768px) {
+    .header__nav {
+        gap: var(--spacing-sm);
+        font-size: var(--font-size-small);
+    }
+    .header__nav a {
+        font-size: var(--font-size-small);
+    }
+}
 /* ============================================
    SECTION: FOOTER
    ============================================ */
